@@ -35,7 +35,7 @@ done
 #
 ##a:Install XORG for Archlinux## ##mesa installed with archlinux## ##xf86-video-vmware was removed from Arch Repos##
 xorg() {
-sudo pacman -S xclip xf86-input-evdev xf86-input-libinput xf86-input-synaptics xf86-input-vmmouse xf86-input-void xf86-video-amdgpu xf86-video-ati xf86-video-dummy xf86-video-fbdev xf86-video-nouveau xf86-video-qxl xf86-video-vesa xf86-video-vmware xorg-apps xorg-font-util xorg-fonts-75dpi xorg-fonts-100dpi xorg-fonts-encodings xorg-server xorg-server-common xorg-xinit xorg-xwayland xterm
+sudo pacman -S xclip xf86-input-evdev xf86-input-libinput xf86-input-synaptics xf86-input-vmmouse xf86-input-void xf86-video-amdgpu xf86-video-ati xf86-video-dummy xf86-video-fbdev xf86-video-nouveau xf86-video-qxl xf86-video-vesa xorg-apps xorg-font-util xorg-fonts-75dpi xorg-fonts-100dpi xorg-fonts-encodings xorg-server xorg-server-common xorg-xinit xorg-xwayland xterm
 sleep 5
 clear
 }
