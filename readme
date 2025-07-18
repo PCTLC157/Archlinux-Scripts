@@ -2,6 +2,6 @@ Install the following to download install scripts from github
 git
 github-cli
 
-#[arch-repo-pctlc]
-#SigLevel = DatabaseOptional
-#Server = https://github.com/PCTLC157/arch-repo-pctlc/raw/main/x86_64/
+[arch-repo-pctlc]
+SigLevel = DatabaseOptional
+Server = https://github.com/PCTLC157/arch-repo-pctlc/raw/main/x86_64/
