@@ -2,8 +2,16 @@ Install the following to download install scripts from github:
 git
 github-cli
 
-Add the following to /etc/pacman.conf
+Download Scripts from Github, Use the following command
 
-[arch-repo-pctlc]
-SigLevel = DatabaseOptional
-Server = https://github.com/PCTLC157/arch-repo-pctlc/raw/main/x86_64/
+git clone https://github.com/PCTLC157/Archlinux-Scripts.git
+
+To make files executable, navigate to folder location of scripts (Right Click, select, Open In Terminal) and run the following:
+sudo chmod +x archlinux-post-install.sh aur.sh desktops.sh
+
+To run any of the three scripts use any of the following commands
+./archlinux-post-install.sh
+./aur.sh
+./desktops.sh
+
+The command may change depending on which type of shell you are using.
