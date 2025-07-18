@@ -79,7 +79,7 @@ clear
 #
 ##g:Install PCTLC Packages##
 pctlc() {
-sudo pacman -S --needed dconf-editor fastfetch firefox flatpak gnome-disk-utility gnome-terminal gufw htop inkscape inxi keepassxc libreoffice-fresh okular pdftk rclone thunderbird viewnior vlc yad yt-dlp
+sudo pacman -S --needed dconf-editor fastfetch firefox flatpak gnome-disk-utility gnome-terminal gufw htop inkscape inxi keepassxc libreoffice-fresh okular pdftk rclone thunderbird viewnior vlc yad yt-dlp asunder damadamas-icon-theme-git mintstick pix rclone-browser yaru-gnome-shell-theme yaru-gtk-theme yaru-icon-theme mint-y-icons
 sleep 5
 clear
 }
