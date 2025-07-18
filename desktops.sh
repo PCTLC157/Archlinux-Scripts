@@ -56,7 +56,7 @@ clear
 #
 ##b:Install Gnome Desktop##
 gnome() {
-sudo pacman -S --needed accountsservice adwaita-icon-theme adapta-gtk-theme aisleriot blueman archlinux-appstream-data brasero cosmic-store file-roller geany ghex gnome gnome-dictionary gnome-firmware gnome-photos gnome-shell-extensions gnome-sound-recorder gnome-tweaks gnumeric gtk-engine-murrine loupe materia-gtk-theme network-manager-applet orchis-theme packagekit papirus-icon-theme pavucontrol polkit-gnome seahorse sysprof tldr tmux transmission-gtk xdg-desktop-portal-gtk
+sudo pacman -S --needed accountsservice adwaita-icon-theme adapta-gtk-theme aisleriot blueman archlinux-appstream-data brasero cosmic-store extension-manager file-roller geany ghex gnome gnome-dictionary gnome-firmware gnome-photos gnome-shell-extensions gnome-sound-recorder gnome-tweaks gnumeric gtk-engine-murrine loupe materia-gtk-theme network-manager-applet orchis-theme packagekit papirus-icon-theme pavucontrol polkit-gnome seahorse sysprof text-engine tldr tmux transmission-gtk xdg-desktop-portal-gtk
 sleep 5
 clear
 }
@@ -70,7 +70,7 @@ clear
 #
 ##c:Install Cinnamon Desktop##
 cinnamon() {
-sudo pacman -S --needed accountsservice adwaita-icon-theme adapta-gtk-theme aisleriot archlinux-appstream-data blueman brasero cinnamon cinnamon-translations cosmic-store file-roller geany gnome-firmware gnumeric gsound gtk-engine-murrine guvcview materia-gtk-theme nemo nemo-fileroller nemo-share orchis-theme network-manager-applet packagekit papirus-icon-theme pavucontrol polkit-gnome tldr tmux transmission-gtk xdg-desktop-portal-gtk xed light-locker lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
+sudo pacman -S --needed accountsservice adwaita-icon-theme adapta-gtk-theme aisleriot archlinux-appstream-data blueman brasero cinnamon cinnamon-translations cosmic-store file-roller geany gnome-firmware gnumeric gsound gtk-engine-murrine guvcview materia-gtk-theme nemo nemo-fileroller nemo-share orchis-theme network-manager-applet packagekit papirus-icon-theme pavucontrol polkit-gnome sticky tldr tmux transmission-gtk xdg-desktop-portal-gtk xed xviewer light-locker lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
 sleep 5
 clear
 }
