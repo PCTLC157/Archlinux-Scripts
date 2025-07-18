@@ -1,6 +1,8 @@
-Install the following to download install scripts from github
+Install the following to download install scripts from github:
 git
 github-cli
+
+Add the following to /etc/pacman.conf
 
 [arch-repo-pctlc]
 SigLevel = DatabaseOptional
