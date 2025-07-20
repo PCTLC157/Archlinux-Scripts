@@ -66,7 +66,7 @@ clear
 #
 ##b:Install Gnome Desktop##
 gnome() {
-sudo pacman -S --needed accountsservice adwaita-icon-theme adapta-gtk-theme aisleriot blueman archlinux-appstream-data brasero cosmic-store extension-manager file-roller gdm geany ghex gnome gnome-dictionary gnome-firmware gnome-keyring gnome-photos gnome-shell-extensions gnome-sound-recorder gnome-tweaks gnumeric gtk-engine-murrine loupe materia-gtk-theme network-manager-applet orchis-theme packagekit papirus-icon-theme pavucontrol polkit-gnome seahorse sysprof text-engine tldr tmux transmission-gtk xdg-desktop-portal-gtk
+sudo pacman -S --needed accountsservice adwaita-icon-theme adapta-gtk-theme aisleriot blueman archlinux-appstream-data brasero cosmic-store extension-manager file-roller gdm geany ghex gnome gnome-dictionary gnome-disk-utility gnome-firmware gnome-keyring gnome-photos gnome-shell-extensions gnome-sound-recorder gnome-tweaks gnumeric gtk-engine-murrine loupe materia-gtk-theme network-manager-applet orchis-theme packagekit papirus-icon-theme pavucontrol polkit-gnome seahorse sysprof text-engine tldr tmux transmission-gtk xdg-desktop-portal-gtk
 sleep 5
 clear
 }
@@ -122,7 +122,7 @@ clear
 #
 ##f:Install XFCE Desktop##
 xfce() {
-sudo pacman -S --needed blueman xfce4 xfce4-goodies lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings 
+sudo pacman -S --needed blueman xfce4 xfce4-goodies lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings network-manager-applet 
 sleep 5
 clear
 }
