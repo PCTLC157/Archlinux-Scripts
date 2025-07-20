@@ -14,6 +14,8 @@ To run any of the three scripts use any of the following commands
 ./aur.sh
 ./desktops.sh
 
-There is an option to install Trizen within the menu of the archlinux-post-install.sh script, however Trizen is installed when installing General Packages from the General Menu.
-
 The command may change depending on which type of shell you are using.
+
+NOTE:There is an option to install Trizen within the menu of the archlinux-post-install.sh script, however Trizen is installed when installing General Packages from the General Menu.
+
+
