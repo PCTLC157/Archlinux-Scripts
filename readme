@@ -20,5 +20,7 @@ NOTE: The aur.sh script is not needed if you enable (My Personal Repo) arch-repo
 
 NOTE: There is an option to install Trizen within the menu of the archlinux-post-install.sh script, however Trizen is installed when installing General Packages from the General Menu.
 
+NOTE: xfce4-terminal installed within the archlinux-post-install.sh under PCTLC Packages is for the purpose of executing my Yad scripts.
+
 
 

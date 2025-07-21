@@ -52,7 +52,7 @@ done
 #
 ##a:Install Cosmic Desktop##
 cosmic() {
-sudo pacman -S --needed cosmic-session cosmic-files cosmic-store cosmic-terminal cosmic-text-editor cosmic-wallpapers cosmic-player polkit-kde-agent xdg-desktop-portal-gtk archlinux-appstream-data packagekit cosmic-greeter partitionmanager
+sudo pacman -S --needed cosmic-session cosmic-files cosmic-store cosmic-terminal cosmic-text-editor cosmic-wallpapers cosmic-player polkit-kde-agent xdg-desktop-portal-gtk archlinux-appstream-data packagekit cosmic-greeter partitionmanager xfce4-terminal
 sleep 5
 clear
 }
