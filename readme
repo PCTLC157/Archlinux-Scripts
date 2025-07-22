@@ -9,7 +9,8 @@ git clone https://github.com/PCTLC157/Archlinux-Scripts.git
 To make files executable, navigate to folder location of scripts (Right Click, select, Open In Terminal) and run the following:
 sudo chmod +x archlinux-post-install.sh aur.sh desktops.sh
 
-To run any of the three scripts use any of the following commands
+To run any of the four scripts use any of the following commands
+./archlinux-post-install-auto.sh
 ./archlinux-post-install.sh
 ./aur.sh
 ./desktops.sh
@@ -18,7 +19,9 @@ The command may change depending on which type of shell you are using.
 
 NOTE: The aur.sh script is not needed if you enable (My Personal Repo) arch-repo-pctlc which has all the AUR packages available through the pacman -S command when added to etc/pacman.conf file.
 
-NOTE: There is an option to install Trizen within the menu of the archlinux-post-install.sh script, however Trizen is installed when installing General Packages from the General Menu.
+NOTE: Differences between archlinux-post-install-auto & archlinux-post-install
+    : (archlinux-post-install-auto) installs all packages required except for Xorg, PCTLC, Yad & Trizen packages which speeds up the install process.
+    : (archlinux-post-install) is broken up into install categories Xorg, Multimedia, Network, Fonts, Printing, PCTLC, Yad & Trizen packages for a more selective custom install.
 
 NOTE: xfce4-terminal installed within the archlinux-post-install.sh under PCTLC Packages is for the purpose of executing my Yad scripts.
 
