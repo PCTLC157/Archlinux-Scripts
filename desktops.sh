@@ -24,8 +24,11 @@ echo "5: Enable Plasma Display Manager"
 echo "-----------------------------------"
 echo "f: XFCE"
 echo "6: Enable XFCE Display Manager"
+echo "-----------------------------------"
+echo "g: LXQT"
+echo "7: Enable LXQT Display Manager"
 echo "######################################"
-echo "g: Enable & Disable SystemD Services"
+echo "h: Enable & Disable SystemD Services"
 echo "######################################"
 echo "x: Exit"
 read -p "Please Enter Your Choice: " number
@@ -43,7 +46,9 @@ case $number in
     5) sddm;;
     f) xfce;;
     6) lightdm2;;
-    g) systemd;;
+    g) lxqt;;
+    7) sddm1;;
+    h) systemd;;
     x) exit;;
 #
 esac
@@ -133,7 +138,21 @@ sudo systemctl enable lightdm.service
 sleep 5
 clear
 }
-##g:Disable & Enable SystemD Services##
+#
+##g:Install LXQT Desktop##
+lxqt() {
+sudo pacman -S --needed blueman cosmic-store breeze-icons lxqt oxygen-icons nm-tray sddm
+sleep 5
+clear
+}
+#
+##7:Enable LXQT Display Manager sddm##
+sddm1() {
+sudo systemctl enable sddm.service
+sleep 5
+clear
+}
+##h:Disable & Enable SystemD Services##
 systemd() {
 sudo
 systemctl disable dhcpcd.service
