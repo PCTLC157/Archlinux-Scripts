@@ -105,6 +105,8 @@ clear
 #
 ##j:Download Themes and Backgrounds From Github##
 themes() {
+cd usr/share
+sudo mkdir -p backgrounds
 cd ~
 git clone https://github.com/PCTLC157/Themes.git
 cd ~/Themes
