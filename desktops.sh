@@ -141,7 +141,7 @@ clear
 #
 ##g:Install LXQT Desktop##
 lxqt() {
-sudo pacman -S --needed blueman cosmic-store breeze-icons lxqt oxygen-icons nm-tray sddm
+sudo pacman -S --needed blueman cosmic-store breeze-icons labwc lxqt lxqt-wayland-session oxygen-icons nm-tray sddm
 sleep 5
 clear
 }
