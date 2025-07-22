@@ -127,7 +127,7 @@ clear
 #
 ##f:Install XFCE Desktop##
 xfce() {
-sudo pacman -S --needed blueman cosmic-store labwc xfce4 xfce4-goodies lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings network-manager-applet polkit-gnome polkit-qt6 xarchiver
+sudo pacman -S --needed blueman cosmic-store labwc xfce4 xfce4-goodies lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings network-manager-applet polkit-gnome polkit-qt6 xarchiver xed
 sleep 5
 clear
 }
@@ -141,7 +141,7 @@ clear
 #
 ##g:Install LXQT Desktop##
 lxqt() {
-sudo pacman -S --needed blueman cosmic-store breeze-icons labwc lxqt lxqt-wayland-session oxygen-icons nm-tray sddm
+sudo pacman -S --needed blueman cosmic-store breeze-icons kate labwc lxqt lxqt-wayland-session oxygen-icons nm-tray sddm
 sleep 5
 clear
 }
@@ -154,7 +154,7 @@ clear
 }
 ##h:Disable & Enable SystemD Services##
 systemd() {
-sudo
+sudo -s <<EOF
 systemctl disable dhcpcd.service
 systemctl enable haveged.service
 systemctl enable bluetooth.service
@@ -162,6 +162,7 @@ systemctl enable cups.service
 systemctl enable NetworkManager
 systemctl enable fstrim.timer
 systemctl enable plocate-updatedb.timer
+EOF
 sleep 5
 clear
 }
