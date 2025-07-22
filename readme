@@ -9,7 +9,7 @@ Download Scripts from Github, Use the following command
 git clone https://github.com/PCTLC157/Archlinux-Scripts.git
 
 To make files executable, navigate to folder location of scripts (Right Click, select, Open In Terminal) and run the following:
-sudo chmod +x archlinux-post-install.sh aur.sh desktops.sh
+sudo chmod +x archlinux-post-install.sh archlinux-post-install-auto.sh aur.sh desktops.sh
 
 To run any of the four scripts use any of the following commands
 ./archlinux-post-install-auto.sh
