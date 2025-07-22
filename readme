@@ -1,3 +1,5 @@
+The Purpose Of These Scripts Is To Accommodate The Install Of Required Packages For A Complete Desktop After Installing Archlinux With The Arch ISO Using Command Line Install.
+
 Install the following to download install scripts from github:
 git
 github-cli
