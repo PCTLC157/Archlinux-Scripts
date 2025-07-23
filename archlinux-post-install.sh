@@ -81,7 +81,7 @@ clear
 #
 ##g:Install PCTLC Packages##
 pctlc() {
-sudo pacman -S --needed dconf-editor fastfetch firefox flatpak gnome-disk-utility gufw htop inkscape inxi keepassxc libreoffice-fresh okular pdftk rclone thunderbird viewnior vlc yad yt-dlp asunder damadamas-icon-theme-git mintstick pix rclone-browser yaru-gtk-theme yaru-icon-theme mint-y-icons nano xfce4-terminal
+sudo pacman -S --needed dconf-editor fastfetch firefox flatpak gnome-disk-utility gufw htop inkscape inxi keepassxc libreoffice-fresh okular pdftk rclone thunderbird viewnior vlc yad yt-dlp asunder damadamas-icon-theme-git mintstick pix rclone-browser yaru-gtk-theme yaru-icon-theme mint-y-icons nano gnome-terminal
 sleep 5
 clear
 }
@@ -105,8 +105,7 @@ clear
 #
 ##j:Download Themes and Backgrounds From Github##
 themes() {
-cd usr/share
-sudo mkdir -p backgrounds
+sudo mkdir -p /usr/share/backgrounds
 cd ~
 git clone https://github.com/PCTLC157/Themes.git
 cd ~/Themes
