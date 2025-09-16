@@ -57,7 +57,7 @@ done
 #
 ##a:Install Cosmic Desktop##
 cosmic() {
-sudo pacman -S --needed archlinux-appstream-data cosmic-greeter cosmic-session cosmic-files cosmic-store cosmic-terminal cosmic-text-editor cosmic-wallpapers cosmic-player packagekit polkit-gnome polkit-qt6 xdg-desktop-portal-gtk
+sudo pacman -S --needed archlinux-appstream-data cosmic-greeter cosmic-session cosmic-files cosmic-store cosmic-terminal cosmic-text-editor cosmic-wallpapers cosmic-player galculator packagekit polkit-gnome polkit-qt6 xdg-desktop-portal-gtk
 sleep 5
 clear
 }
@@ -71,7 +71,7 @@ clear
 #
 ##b:Install Gnome Desktop##
 gnome() {
-sudo pacman -S --needed accountsservice adwaita-icon-theme adapta-gtk-theme aisleriot archlinux-appstream-data blueman brasero cosmic-store extension-manager file-roller gdm geany ghex gnome gnome-dictionary gnome-firmware gnome-keyring gnome-photos gnome-shell-extensions gnome-sound-recorder gnome-terminal gnome-tweaks gnumeric gtk-engine-murrine loupe materia-gtk-theme network-manager-applet orchis-theme packagekit papirus-icon-theme pavucontrol polkit-gnome seahorse sysprof text-engine tldr tmux transmission-gtk xdg-desktop-portal-gtk yaru-gnome-shell-theme
+sudo pacman -S --needed accountsservice adwaita-icon-theme adapta-gtk-theme aisleriot archlinux-appstream-data blueman brasero cosmic-store extension-manager file-roller gdm geany ghex gnome gnome-calculator gnome-dictionary gnome-firmware gnome-keyring gnome-photos gnome-shell-extensions gnome-sound-recorder gnome-terminal gnome-tweaks gnumeric gtk-engine-murrine loupe materia-gtk-theme network-manager-applet orchis-theme packagekit papirus-icon-theme pavucontrol polkit-gnome seahorse sysprof text-engine tldr tmux transmission-gtk xdg-desktop-portal-gtk yaru-gnome-shell-theme
 sleep 5
 clear
 }
@@ -85,7 +85,7 @@ clear
 #
 ##c:Install Cinnamon Desktop##
 cinnamon() {
-sudo pacman -S --needed accountsservice adwaita-icon-theme adapta-gtk-theme aisleriot archlinux-appstream-data blueman brasero cinnamon cinnamon-translations cosmic-store file-roller geany gnome-firmware gnome-terminal gnumeric gsound gtk-engine-murrine guvcview light-locker lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings materia-gtk-theme nemo nemo-fileroller nemo-share network-manager-applet orchis-theme packagekit papirus-icon-theme pavucontrol polkit-gnome polkit-qt6 sticky tldr tmux transmission-gtk xdg-desktop-portal-gtk xed xviewer 
+sudo pacman -S --needed accountsservice adwaita-icon-theme adapta-gtk-theme aisleriot archlinux-appstream-data blueman brasero cinnamon cinnamon-translations cosmic-store file-roller galculator geany gnome-firmware gnome-terminal gnumeric gsound gtk-engine-murrine guvcview light-locker lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings materia-gtk-theme nemo nemo-fileroller nemo-share network-manager-applet orchis-theme packagekit papirus-icon-theme pavucontrol polkit-gnome polkit-qt6 sticky tldr tmux transmission-gtk xdg-desktop-portal-gtk xed xviewer 
 sleep 5
 clear
 }
@@ -99,7 +99,7 @@ clear
 #
 ##d:Install Budgie Desktop##
 budgie() {
-sudo pacman -S --needed archlinux-appstream-data budgie budgie-extras blueman cosmic-store gnome-terminal light-locker lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings materia-gtk-theme nemo nemo-fileroller nemo-share network-manager-applet orchis-theme papirus-icon-theme packagekit pavucontrol polkit-gnome polkit-qt6 tldr tmux transmission-gtk xdg-desktop-portal-gtk xed
+sudo pacman -S --needed archlinux-appstream-data budgie budgie-extras blueman cosmic-store galculator gnome-terminal light-locker lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings materia-gtk-theme nemo nemo-fileroller nemo-share network-manager-applet orchis-theme papirus-icon-theme packagekit pavucontrol polkit-gnome polkit-qt6 tldr tmux transmission-gtk xdg-desktop-portal-gtk xed
 sleep 5
 clear
 }
@@ -127,7 +127,7 @@ clear
 #
 ##f:Install XFCE Desktop##
 xfce() {
-sudo pacman -S --needed blueman cosmic-store labwc lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings network-manager-applet polkit-gnome polkit-qt6 xfce4 xfce4-goodies xarchiver xed
+sudo pacman -S --needed blueman cosmic-store galculator labwc lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings network-manager-applet polkit-gnome polkit-qt6 xfce4 xfce4-goodies xarchiver xed
 sleep 5
 clear
 }
@@ -141,7 +141,7 @@ clear
 #
 ##g:Install LXQT Desktop##
 lxqt() {
-sudo pacman -S --needed blueman breeze-icons cosmic-store kate labwc lxqt lxqt-wayland-session nm-tray oxygen-icons sddm
+sudo pacman -S --needed blueman breeze-icons cosmic-store galculator kate labwc lxqt lxqt-wayland-session nm-tray oxygen-icons sddm
 sleep 5
 clear
 }
