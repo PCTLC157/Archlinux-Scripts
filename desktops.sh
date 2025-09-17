@@ -85,7 +85,7 @@ clear
 #
 ##c:Install Cinnamon Desktop##
 cinnamon() {
-sudo pacman -S --needed accountsservice adwaita-icon-theme adapta-gtk-theme aisleriot archlinux-appstream-data blueman brasero cinnamon cinnamon-translations cosmic-store file-roller galculator geany gnome-firmware gnome-terminal gnumeric gsound gtk-engine-murrine guvcview light-locker lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings materia-gtk-theme nemo nemo-fileroller nemo-share network-manager-applet orchis-theme packagekit papirus-icon-theme pavucontrol polkit-gnome polkit-qt6 sticky tldr tmux transmission-gtk xdg-desktop-portal-gtk xed xviewer 
+sudo pacman -S --needed accountsservice adwaita-icon-theme adapta-gtk-theme aisleriot archlinux-appstream-data blueman brasero cinnamon cinnamon-translations cosmic-store file-roller galculator geany gnome-firmware gnome-terminal gnumeric gsound gtk-engine-murrine guvcview light-locker lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings materia-gtk-theme nemo nemo-fileroller nemo-share network-manager-applet orchis-theme packagekit papirus-icon-theme pavucontrol polkit-gnome polkit-qt6 sticky tldr tmux transmission-gtk xdg-desktop-portal-gtk xed xplayer xviewer 
 sleep 5
 clear
 }
