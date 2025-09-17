@@ -25,7 +25,7 @@ NOTE: Differences between archlinux-post-install-auto & archlinux-post-install
     : (archlinux-post-install-auto) installs all packages required except for Xorg, PCTLC, Yad & Trizen packages which speeds up the install process.
     : (archlinux-post-install) is broken up into install categories Xorg, Multimedia, Network, Fonts, Printing, PCTLC, Yad & Trizen packages for a more selective custom install.
 
-NOTE: xfce4-terminal installed within the archlinux-post-install.sh under PCTLC Packages is for the purpose of executing my Yad scripts.
+
 
 
 
