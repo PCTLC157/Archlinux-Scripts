@@ -1,7 +1,0 @@
-git add .
-git commit -m Archlinux-Scripts
-git push https://github.com/PCTLC157/Archlinux-Scripts
-
-git add .
-git commit -m arch-repo-pctlc
-git push https://github.com/PCTLC157/arch-repo-pctlc
