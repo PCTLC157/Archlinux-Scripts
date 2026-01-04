@@ -4,19 +4,21 @@
 menu () { while true
 do
 echo "
-#################################
-##     Chaotic AUR Set Up      ##
-#################################"
+#########################################
+##     Chaotic & PCTLC AUR Set Up      ##
+#########################################"
 echo "a: Retrieve Key" 
 echo "b: Install Chaotic Keyring" 
-echo "c: Add Repo"
+echo "c: Add Chaotic Repo"
+echo "d: Add PCTLC Repo"
 echo "x: Exit"
 read -p "Please Enter Your Choice: " number
 ##case is inspecting the number selected##Number is a variable##
 case $number in
 	a) retkey;;
 	b) inring;;
-	c) addrepo;;
+	c) addchaoticrepo;;
+    d) addpctlcrepo;;
     x) exit;;
 #
 esac
@@ -41,17 +43,32 @@ sleep 5
 clear
 }
 #
-##c:Add Repo to /etc/pacman.conf File##
-addrepo() {
+##c:Add Chaotic Repo to /etc/pacman.conf File##
+addchaoticrepo() {
 sudo tee -a /etc/pacman.conf << 'EOF'
+
 [chaotic-aur]
 Include = /etc/pacman.d/chaotic-mirrorlist
+
 EOF
-echo "Repo Added"
+echo "Chaotic Repo Added"
 sleep 5
 clear
 }
 #
+##d:Add PCTLC Repo to /etc/pacman.conf File##
+addpctlcrepo() {
+sudo tee -a /etc/pacman.conf << 'EOF'
+
+[arch-repo-pctlc]
+SigLevel = Never
+Server = https://github.com/PCTLC157/arch-repo-pctlc/raw/main/x86_64/
+
+EOF
+echo "PCTLC Repo Added"
+sleep 5
+clear
+}
 ##Needed To Run The Main Menu Function##
 menu
 
