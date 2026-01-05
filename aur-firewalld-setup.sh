@@ -11,6 +11,7 @@ echo "a: Retrieve Key"
 echo "b: Install Chaotic Keyring" 
 echo "c: Add Chaotic Repo"
 echo "d: Add PCTLC Repo"
+echo "e: Enable FirewallD"
 echo "x: Exit"
 read -p "Please Enter Your Choice: " number
 ##case is inspecting the number selected##Number is a variable##
@@ -19,6 +20,7 @@ case $number in
 	b) inring;;
 	c) addchaoticrepo;;
     d) addpctlcrepo;;
+    e) firewalld;;
     x) exit;;
 #
 esac
@@ -69,6 +71,11 @@ echo "PCTLC Repo Added"
 sleep 5
 clear
 }
+#
+##e:Enable FirewallD##
+firewalld() {
+sudo systemctl enable --now firewalld
+#
 ##Needed To Run The Main Menu Function##
 menu
 
