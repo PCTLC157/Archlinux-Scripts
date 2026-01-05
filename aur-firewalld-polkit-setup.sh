@@ -77,10 +77,12 @@ clear
 ##e:Enable FirewallD##
 firewalld() {
 sudo systemctl enable --now firewalld
+}
 #
 ##f:Polkit Permission Cosmic Desktop##
 polkit() {
 sudo chmod 7455 /usr/lib/polkit-1/polkit-agent-helper-1
+}
 #
 ##Needed To Run The Main Menu Function##
 menu
