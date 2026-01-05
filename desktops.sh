@@ -55,9 +55,9 @@ esac
 done
 }
 #
-##a:Install Cosmic Desktop##
+##a:Install Cosmic Desktop## #Removed polkit-gnome#
 cosmic() {
-sudo pacman -S --needed archlinux-appstream-data cosmic-greeter cosmic-session cosmic-files cosmic-store cosmic-terminal cosmic-text-editor cosmic-wallpapers cosmic-player galculator packagekit polkit-gnome polkit-qt6 xdg-desktop-portal-gtk
+sudo pacman -S --needed archlinux-appstream-data cosmic-app-library cosmic-applets cosmic-bg cosmic-comp cosmic-files cosmic-greeter cosmic-icon-theme cosmic-idle cosmic-initial-setup cosmic-launcher cosmic-notifications cosmic-osd cosmic-panel cosmic-player cosmic-randr cosmic-screenshot cosmic-session cosmic-settings cosmic-settings-daemon cosmic-store cosmic-terminal cosmic-text-editor cosmic-wallpapers cosmic-workspaces xdg-desktop-portal-cosmic galculator packagekit polkit-qt6
 sleep 5
 clear
 }
