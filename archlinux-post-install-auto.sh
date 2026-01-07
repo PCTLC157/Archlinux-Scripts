@@ -53,7 +53,7 @@ clear
 #
 ##g:Install PCTLC Packages## #Replaced gufw with firewalld wayland issue#
 pctlc() {
-sudo pacman -S --needed dconf-editor easytag fastfetch firefox firewalld flatpak gnome-disk-utility gnome-terminal htop inkscape inxi keepassxc libreoffice-fresh mintstick mint-y-icons nano okular pdftk pix rclone rclone-browser rsgain shotwell simple-scan thunderbird vlc webapp-manager yad yt-dlp yaru-gtk-theme yaru-icon-theme
+sudo pacman -S --needed dconf-editor easytag fastfetch firefox firewalld flatpak gnome-disk-utility gnome-terminal htop inkscape inxi keepassxc libreoffice-fresh mintstick mint-y-icons nano okular pdftk pix rclone rclone-browser rsgain shotwell simple-scan thunderbird vlc vlc-plugins-all webapp-manager yad yt-dlp yaru-gtk-theme yaru-icon-theme
 sleep 5
 clear
 }
