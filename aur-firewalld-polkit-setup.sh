@@ -11,8 +11,9 @@ echo "a: Retrieve Key"
 echo "b: Install Chaotic Keyring" 
 echo "c: Add Chaotic Repo"
 echo "d: Add PCTLC Repo"
-echo "e: Enable FirewallD"
-echo "f: Enable Polkit Permission for Cosmic"
+echo "e: Add extra Repo Artix"
+echo "f: Enable FirewallD"
+echo "g: Enable Polkit Permission for Cosmic"
 echo "x: Exit"
 read -p "Please Enter Your Choice: " number
 ##case is inspecting the number selected##Number is a variable##
@@ -20,11 +21,12 @@ case $number in
 	a) retkey;;
 	b) inring;;
 	c) addchaoticrepo;;
-    d) addpctlcrepo;;
-    e) firewalld;;
-    f) polkit;;
-    x) exit;;
-#
+    	d) addpctlcrepo;;
+    	e) addextrarepo;;
+    	f) firewalld;;
+    	g) polkit;;
+    	x) exit;;
+#	
 esac
 done
 }
@@ -74,12 +76,25 @@ sleep 5
 clear
 }
 #
-##e:Enable FirewallD##
+##e:Add extra repo to Artix pacman.conf file##
+addextrarepo() {
+sudo tee -a /etc/pacman.conf << 'EOF'
+
+[extra]
+Include = /etc/pacman.d/mirrorlist-arch
+
+EOF
+echo "extra Repo added to pacman.conf file"
+sleep 5
+clear
+}
+#
+##f:Enable FirewallD##
 firewalld() {
 sudo systemctl enable --now firewalld
 }
 #
-##f:Polkit Permission Cosmic Desktop##
+##g:Polkit Permission Cosmic Desktop##
 polkit() {
 sudo chmod 7455 /usr/lib/polkit-1/polkit-agent-helper-1
 }
