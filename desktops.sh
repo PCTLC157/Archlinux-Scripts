@@ -27,8 +27,10 @@ echo "6: Enable XFCE Display Manager"
 echo "-----------------------------------"
 echo "g: LXQT"
 echo "7: Enable LXQT Display Manager"
+echo "-----------------------------------"
+echo "h: Dank Material Shell"
 echo "######################################"
-echo "h: Enable & Disable SystemD Services"
+echo "i: SystemD Services"
 echo "######################################"
 echo "x: Exit"
 read -p "Please Enter Your Choice: " number
@@ -48,7 +50,8 @@ case $number in
     6) lightdm2;;
     g) lxqt;;
     7) sddm1;;
-    h) systemd;;
+    h) dank;;
+    i) systemd;;
     x) exit;;
 #
 esac
@@ -152,10 +155,14 @@ sudo systemctl enable sddm.service
 sleep 5
 clear
 }
-##h:Disable & Enable SystemD Services##
+##h:Install Dank Material Shell##
+dank() {
+curl -fsSL https://install.danklinux.com | sh
+}
+##i:SystemD Services##
 systemd() {
 sudo -s <<EOF
-systemctl disable dhcpcd.service
+#systemctl disable dhcpcd.service
 systemctl enable haveged.service
 systemctl enable bluetooth.service
 systemctl enable cups.service
