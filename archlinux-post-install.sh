@@ -46,21 +46,21 @@ clear
 #
 ##b:Install General Packages for Archlinux##
 general() {
-sudo pacman -S --needed amd-ucode archlinux-contrib aspell aspell-en arch-install-scripts archiso bash-completion bcachefs-tools bind binutils bluez bluez-utils bolt btrfs-progs bzip2 cdrtools cmake cpio cryfs dd_rescue ddrescue devtools diffutils dkms dmidecode dos2unix dvd+rw-tools efitools encfs exfatprogs f2fs-tools fatresize fsarchiver fuse3 fwupd gocryptfs gpart gparted grsync gvfs gvfs-afc gvfs-goa gvfs-gphoto2 grsync gvfs-mtp gvfs-nfs gvfs-smb gzip haveged hdparm hspell htop hunspell hunspell-en_us hwdata hwdetect hwinfo inxi intel-ucode jfsutils keepassxc ldns lha libblockdev libburn libisofs libisoburn logrotate lsb-release lsof lsscsi lz4 lrzip lzip lzop man-db man-pages mdadm mkinitcpio-archiso mkinitcpio-nfs-utils ntfs-3g openssl 7zip pacutils pacman-contrib pahole papirus-icon-theme parted perl perl-data-dump perl-json perl-lwp-protocol-https perl-term-readline-gnu perl-term-ui pkgfile plocate pv python-mutagen python-pycryptodomex python-setuptools python-sphinx python-websockets python-xattr qt5ct rsync s-nail sdparm sdl2 sg3_utils smartmontools squashfs-tools sudo tar testdisk texinfo tlp udftools udisks2 unace unarj unrar unzip upower usbmuxd usbutils vim which xdg-user-dirs xdg-utils xfsprogs xz zip zstd
+sudo pacman -S --needed amd-ucode archlinux-contrib aspell aspell-en arch-install-scripts archiso bash-completion bcachefs-tools bind bluez bluez-utils bolt btrfs-progs cdrtools cmake cpio cryfs dd_rescue ddrescue devtools dkms dmidecode dos2unix dvd+rw-tools efitools encfs exfatprogs f2fs-tools fastfetch fatresize fsarchiver fuse3 fwupd gocryptfs gpart gparted grsync gvfs gvfs-afc gvfs-goa gvfs-gphoto2 grsync gvfs-mtp gvfs-nfs gvfs-smb haveged hdparm hspell htop hunspell hunspell-en_us hwdetect hwinfo inxi jfsutils ldns lha libblockdev libburn libisofs libisoburn logrotate lsb-release lsof lsscsi lrzip lzip lzop man-db man-pages mdadm mkinitcpio-archiso mkinitcpio-nfs-utils ntfs-3g 7zip pacutils pacman-contrib pahole papirus-icon-theme parted perl-data-dump perl-json perl-lwp-protocol-https perl-term-readline-gnu perl-term-ui pkgfile plocate pv python-mutagen python-pycryptodomex python-setuptools python-sphinx python-websockets python-xattr qt5ct rsync s-nail sdparm sdl2 sg3_utils smartmontools squashfs-tools testdisk texinfo tlp udftools udisks2 unace unarj unrar unzip upower usbmuxd usbutils vim which xdg-user-dirs xdg-utils xfsprogs zip
 sleep 5
 clear
 }
 #
 ##c:Install Multimedia for Archlinux##
 multimedia() {
-sudo pacman -S --needed alsa-card-profiles alsa-lib alsa-plugins alsa-firmware alsa-utils audacious audacious-plugins cdrdao dvdauthor faac faad2 ffmpeg ffmpegthumbnailer flac frei0r-plugins gstreamer gst-libav gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugin-pipewire gst-plugins-ugly gstreamer-vaapi imagemagick lame libdvdcss libopenraw mencoder mjpegtools mpv pipewire pipewire-alsa pipewire-audio pipewire-docs pipewire-jack pipewire-pulse pipewire-v4l2 poppler-glib sox smplayer wireplumber x265 x264 xvidcore
+sudo pacman -S --needed alsa-card-profiles alsa-lib alsa-plugins alsa-firmware alsa-utils audacious audacious-plugins cdrdao dvdauthor faac faad2 ffmpeg ffmpegthumbnailer flac frei0r-plugins gstreamer gst-libav gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugin-pipewire gst-plugins-ugly imagemagick lame libdvdcss libopenraw mencoder mjpegtools mpv pipewire pipewire-alsa pipewire-audio pipewire-docs pipewire-jack pipewire-pulse pipewire-v4l2 poppler-glib sox smplayer wireplumber x265 x264 xvidcore
 sleep 5
 clear
 }
 #
 ##d:Install Required Network Components for Archlinux##
 network() {
-sudo pacman -S --needed avahi b43-fwcutter broadcom-wl-dkms dmraid dnsmasq dnsutils ethtool falkon filezilla inetutils iwd net-tools netctl networkmanager networkmanager-openvpn nm-connection-editor nfs-utils nilfs-utils nss-mdns openbsd-netcat openconnect openresolv openssh openssl openvpn samba vsftpd wget wireless-regdb wireless_tools whois wpa_supplicant
+sudo pacman -S --needed avahi b43-fwcutter broadcom-wl-dkms dmraid dnsmasq dnsutils ethtool falkon filezilla inetutils iwd net-tools netctl networkmanager-openvpn nm-connection-editor nfs-utils nilfs-utils nss-mdns openbsd-netcat openconnect openresolv openssh openvpn samba vsftpd wget wireless-regdb wireless_tools whois
 sleep 5
 clear
 }
@@ -81,7 +81,7 @@ clear
 #
 ##g:Install PCTLC Packages## #Replaced gufw with firewalld wayland issue#
 pctlc() {
-sudo pacman -S --needed dconf-editor easytag fastfetch firefox firewalld flatpak gnome-disk-utility gnome-terminal htop inkscape inxi keepassxc libreoffice-fresh mintstick mint-y-icons nano okular pdftk pix rclone rclone-browser rsgain shotwell simple-scan thunderbird vlc webapp-manager yad yt-dlp yaru-gtk-theme yaru-icon-theme
+sudo pacman -S --needed dconf-editor easytag firefox firewalld flatpak gnome-disk-utility gnome-terminal inkscape keepassxc libreoffice-fresh mintstick mint-y-icons nano okular pdftk pix rclone rclone-browser rsgain shotwell thunderbird vlc webapp-manager yad yt-dlp yaru-gtk-theme yaru-icon-theme
 sleep 5
 clear
 }
