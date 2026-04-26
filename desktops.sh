@@ -116,14 +116,14 @@ clear
 #
 ##e:Install KDE Plasma Desktop##
 kde() {
-sudo pacman -S --needed ark cosmic-store dolphin dolphin-plugins filelight k3b kaddressbook kalk kate kcalc kdeconnect kdegraphics-thumbnailers kdenetwork-filesharing kget kolourpaint konsole kontact korganizer krfb ktorrent okular plasma-meta polkit-qt6 sddm skanlite yakuake 
+sudo pacman -S --needed ark dolphin dolphin-plugins filelight k3b kaddressbook kalk kate kcalc kdeconnect kdegraphics-thumbnailers kdenetwork-filesharing kget kolourpaint konsole kontact korganizer krfb ktorrent okular plasma-meta polkit-qt6 skanlite yakuake 
 sleep 5
 clear
 }
 #
 ##5:Enable KDE Display Manager sddm##
 sddm() {
-sudo systemctl enable sddm.service
+sudo systemctl enable plasmalogin.service
 sleep 5
 clear
 }
