@@ -32,6 +32,8 @@ echo "h: Dank Material Shell"
 echo "######################################"
 echo "i: SystemD Services"
 echo "######################################"
+echo "j: Dinit Services"
+echo "######################################"
 echo "x: Exit"
 read -p "Please Enter Your Choice: " number
 ##case is inspecting the number selected##Number is a variable##
@@ -52,6 +54,7 @@ case $number in
     7) sddm1;;
     h) dank;;
     i) systemd;;
+    j) dinit;;
     x) exit;;
 #
 esac
@@ -173,6 +176,20 @@ systemctl enable cups.service
 systemctl enable NetworkManager
 systemctl enable fstrim.timer
 systemctl enable plocate-updatedb.timer
+EOF
+sleep 5
+clear
+}
+#
+##j:Enable Dinit Services##
+dinit() {
+sudo -s <<EOF
+dinitctl enable service-haveged
+dinitctl enable service-bluetooth
+dinitctl enable service-cups
+dinitctl enable service-NetworkManager
+dinitctl enable service-fstrim.timer
+dinitctl enable service-plocate-updatedb.timer
 EOF
 sleep 5
 clear
