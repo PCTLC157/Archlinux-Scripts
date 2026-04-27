@@ -60,16 +60,20 @@ done
 #
 ##a:Install Cosmic Desktop## #Removed polkit-gnome#
 cosmic() {
-sudo pacman -S --needed archlinux-appstream-data cosmic-app-library cosmic-applets cosmic-bg cosmic-comp cosmic-files cosmic-greeter cosmic-icon-theme cosmic-idle cosmic-initial-setup cosmic-launcher cosmic-notifications cosmic-osd cosmic-panel cosmic-player cosmic-randr cosmic-screenshot cosmic-session cosmic-settings cosmic-settings-daemon cosmic-store cosmic-terminal cosmic-text-editor cosmic-wallpapers cosmic-workspaces xdg-desktop-portal-cosmic galculator packagekit polkit-qt6 power-profiles-daemon system76-power
+sudo pacman -S --needed cosmic cosmic-session dconf galculator packagekit polkit-gnome power-profiles-daemon system-config-printer system76-power
 sleep 5
 clear
 }
 #
 ##1:Enable Cosmic Display Manager##
 cosmicgreeter() {
-sudo systemctl enable cosmic-greeter.service 
+if sudo systemctl enable cosmic-greeter.service; then
+   sudo systemctl enable cosmic-greeter.service
+elif dinitctl enable service-cosmic-greeter; then
+     dinitctl enable service-cosmic-greeter
 sleep 5
 clear
+fi
 }
 #
 ##b:Install Gnome Desktop##
