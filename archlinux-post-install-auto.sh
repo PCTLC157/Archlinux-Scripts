@@ -18,7 +18,8 @@ echo "h: Google Drive Yad Website"
 echo "i: Install Trizen AUR Package Manager"
 echo "j: Download Themes & Backgrounds"
 echo "k: Enable FirewallD"
-echo "l: Add Arch Repo For Artix"
+echo "l: Remove Age Verification SystemD"
+echo "m: Mask Age Verification SystemD"
 echo "x: Exit"
 read -p "Please Enter Your Choice: " number
 ##case is inspecting the number selected##Number is a variable##
@@ -34,7 +35,8 @@ case $number in
     i) trizen;;
     j) themes;;
     k) firewalld;;
-    l) archrepoartix;;
+    l) ravsd;;
+    m) maskravsd;;
 	x) exit;;
 #
 esac
@@ -153,17 +155,14 @@ firewalld() {
 sudo systemctl enable --now firewalld
 }
 #
-##e:Add Arch Repo to Artix pacman.conf file not included by default##
-archrepoartix() {
-sudo tee -a /etc/pacman.conf << 'EOF'
-
-[extra]
-Include = /etc/pacman.d/mirrorlist-arch
-
-EOF
-echo "extra Repo added to pacman.conf file"
-sleep 5
-clear
+##l:Remove Age Verification SystemD##
+ravsd() {
+sudo systemctl disable systemd-userdb-load-credentials.service systemd-userdbd.service systemd-userdbd.socket systemd-homed.service --now
+}
+#
+##m:Mask Age Verification SystemD##
+maskravsd() {
+sudo systemctl mask systemd-userdb-load-credentials.service systemd-userdbd.service systemd-userdbd.socket systemd-homed.service
 }
 #
 ##Needed To Run The Main Menu Function##

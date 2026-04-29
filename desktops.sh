@@ -70,13 +70,9 @@ clear
 #
 ##1:Enable Cosmic Display Manager##
 cosmicgreeter() {
-if sudo systemctl enable cosmic-greeter.service; then
-   sudo systemctl enable cosmic-greeter.service
-elif dinitctl enable service-cosmic-greeter; then
-     dinitctl enable service-cosmic-greeter
+sudo systemctl enable cosmic-greeter.service
 sleep 5
 clear
-fi
 }
 #
 ##b:Install Gnome Desktop##
@@ -184,12 +180,12 @@ clear
 ##j:Enable Dinit Services##
 dinit() {
 sudo -s <<EOF
-dinitctl enable service-haveged
-dinitctl enable service-bluetooth
-dinitctl enable service-cups
-dinitctl enable service-NetworkManager
-dinitctl enable service-fstrim.timer
-dinitctl enable service-plocate-updatedb.timer
+dinitctl enable haveged
+dinitctl enable bluetooth
+dinitctl enable cups
+dinitctl enable NetworkManager
+dinitctl enable fstrim.timer
+dinitctl enable plocate-updatedb.timer
 EOF
 sleep 5
 clear
